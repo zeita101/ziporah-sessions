@@ -1,39 +1,40 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
 class Home extends Component {
-    state = {
-        counter: 1
-    }
-    Add = () => {
+    // state = {
+    //     counter: 1
+    // }
+    // Add = () => {
 
 
-        let total = parseInt(this.state.number1) + parseInt(this.state.number2)
-        this.setState({ total: total })
-    }
-    multiply = () => {
+    //     let total = parseInt(this.state.number1) + parseInt(this.state.number2)
+    //     this.setState({ total: total })
+    // }
+    // multiply = () => {
 
-        let total = parseInt(this.state.number1) * parseInt(this.state.number2)
-        this.setState({ total: total })
-    }
-    divide = () => {
-
-
-        let total = parseInt(this.state.number1) / parseInt(this.state.number2)
-        this.setState({ total: total })
-    }
-    subtract = () => {
+    //     let total = parseInt(this.state.number1) * parseInt(this.state.number2)
+    //     this.setState({ total: total })
+    // }
+    // divide = () => {
 
 
-        let total = parseInt(this.state.number1) - parseInt(this.state.number2)
-        this.setState({ total: total })
-    }
+    //     let total = parseInt(this.state.number1) / parseInt(this.state.number2)
+    //     this.setState({ total: total })
+    // }
+    // subtract = () => {
+
+
+    //     let total = parseInt(this.state.number1) - parseInt(this.state.number2)
+    //     this.setState({ total: total })
+    // }
     render() {
 
         return (
             <div className='home_container '>
-                <p>
+                {/* <p>
                     input number 1
                 </p>
                 <input onChange={(e) => { this.setState({ number1: e.target.value }) }} />
@@ -56,7 +57,10 @@ class Home extends Component {
                     divide
                 </button>
 
-                <p>result={this.state.total}</p>
+                <p>result={this.state.total}</p> */}
+
+               <p>Home Page is mounted</p>
+
             </div>
         )
     }
